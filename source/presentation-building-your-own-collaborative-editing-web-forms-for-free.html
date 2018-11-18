@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Presentation - Building Your Own Collaborative Editing Web Forms For Free</title>
+        <meta name="tags" content="211" />
+        <meta name="date" content="2017-11-07 11:10:33" />
+        <meta name="category" content="programming" />
+        <meta name="authors" content="DJ" />
+        <meta name="summary" content="" />
+    </head>
+    <body>
+    <strong>Links to slides: <a href="https://docs.google.com/presentation/d/1MzVEcI69tGmkM168Kxfq166x8A1WbMHcp9qBiLkfVxE/edit?usp=sharing">Google Slides</a>,  <a href="/uploads/2017/11/CollabEdit-Presentation.pdf">PDF format</a>, <a href="/uploads/2017/11/CollabEdit-Presentation.pptx">PPT format</a> </strong>
+<br>
+<br>Presented at <a href="https://www.meetup.com/GDGToledo/events/243610233/">Google Developers Group Toledo</a> and <a href="https://www.meetup.com/Toledo-Web-Professionals/events/244814755/">Toledo Web Professionals</a> meetings on Nov 9, 2017.
+<br><h2>Abstract</h2>
+<br>Have your business users ever said, "we have this Excel form that we need to turn into a web form"? So you, as a full-stack web developer, turn it into a HTML form with an AJAX POST to save the data to a database table in the standard CRUD model. It works well enough, but then the users said, "we really need simultaneous editing for everyone in the office." Now you're in trouble because you're trying to reinvent Google Docs / Sheets, which are very complex. How do those collaborative editing tools really work?
+<br>
+<br>We will look at the Google Realtime API, which uses Operational Transformation to automatically synchronize a document between multiple simultaneous editors. Everything you know about distributed version control systems applies to this situation, but now you need to make it work seamlessly for users who have never heard of "git rebase". The client and server implementation of Operational Transformation is very challenging.
+<br>
+<br>Alternatives to Operational Transformation (OT) include Differential Synchronization (DS, aka. 3-way merge), Conflict-free Replicated Data Type (CRDT), and plain old Last Write Wins (LWW). For any of these methods, the critical elements include websockets, message queues, and persistent data storage. This presentation will include a demonstration of a simple implementation of collaborative editing with free, locally hosted software only.
+<br>
+<br>&nbsp;
+    </body>
+</html>

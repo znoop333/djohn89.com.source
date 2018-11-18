@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Presentation idea - Using Columnstore Indexes to Store and Analyze Billions of Torques</title>
+        <meta name="tags" content="208" />
+        <meta name="date" content="2017-07-22 20:40:28" />
+        <meta name="category" content="programming" />
+        <meta name="authors" content="DJ" />
+        <meta name="summary" content="" />
+    </head>
+    <body>
+    <div>This is an abstract I wrote for a local area users group, only to find out that they had stopped meeting. Toledo doesn't seem to be able to keep many computer-based user interest groups alive. I'm posting it here for my own records.</div>
+<br><div></div>
+<br><div></div>
+<br><div>Abstract</div>
+<br><div>
+<br>Torque tools (impact wrenches, electronic motors, rotary torque sensors) produce lots of data as a vehicle is being built. Torque data is used to control the movement of the production lines and to do <a href="http://www.mountztorque.com/learning-center/torque-measurement" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=http://www.mountztorque.com/learning-center/torque-measurement&amp;source=gmail&amp;ust=1500842300619000&amp;usg=AFQjCNFrzpwwf1sLY-tiIVIb0Ows5tqAYQ">quality control analysis</a>. During production, traditional row-based storage makes the most sense, using the VIN and torque tool ID as the primary key in a table optimized for insertion speed and VIN-based lookups. However, post-production it makes more sense to switch to <span class="il">column</span>-based storage for quality control analysis because aggregation functions (mean, std. dev.) need to be computed over large ranges of data (regardless of VIN), and many torque values are similar. <span class="il">Columnstore</span> indexes are a good solution to the latter storage and analysis problem, and they have gotten much better in SQL Server 2016. I'll describe how they're useful for this problem for analyzing how well the torque tools are working <a href="https://en.wikipedia.org/wiki/Process_performance_index" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://en.wikipedia.org/wiki/Process_performance_index&amp;source=gmail&amp;ust=1500842300619000&amp;usg=AFQjCNG7FqaP0mYf2VrJ4N37cKPr6hMoaQ">using simple statistical techniques</a>.</div>
+    </body>
+</html>

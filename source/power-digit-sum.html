@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Power digit sum</title>
+        <meta name="tags" content="42" />
+        <meta name="date" content="2014-06-28 17:39:24" />
+        <meta name="category" content="programming" />
+        <meta name="authors" content="DJ" />
+        <meta name="summary" content="" />
+    </head>
+    <body>
+    The Project Euler website appears to have died, so I'm writing a post as a tribute to its memory. An old but fun problem goes like this:
+<br>
+<br>2^15 = 32768, and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
+<br>
+<br><strong>What is the sum of the digits of the number 2^1000?</strong>
+<br>
+<br>The simplest way to approach this problem is to brute force it in a programming language with big integer support, e.g., Python:
+<br><pre>N=<span class="Constant">2</span>**<span class="Constant">1000</span>
+<br>
+<br>mysum=<span class="Constant">0</span>
+<br><span class="Statement">while</span> N&gt;<span class="Constant">0</span>:
+<br>    N, r = <span class="Identifier">divmod</span>(N,<span class="Constant">10</span>)
+<br>    mysum += r
+<br>
+<br><span class="Identifier">print</span> mysum
+<br></pre>
+<br>
+<br>RIP, Project Euler.
+    </body>
+</html>
