@@ -12,6 +12,8 @@ TIMEZONE = 'America/New_York'
 
 DEFAULT_LANG = 'English'
 
+THEME = '../pelican-blueidea'
+
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
@@ -22,6 +24,8 @@ AUTHOR_FEED_RSS = None
 # Blogroll
 LINKS = (('Publications', '/science'),
          ('Presentation List', 'presentations-list.html'),)
+
+GOOGLE_ANALYTICS = 'UA-40728104-1'
 
 DEFAULT_PAGINATION = 20
 
