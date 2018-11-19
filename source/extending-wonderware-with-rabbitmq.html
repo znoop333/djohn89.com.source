@@ -1,11 +1,12 @@
 <html>
     <head>
         <title>Extending Wonderware with RabbitMQ</title>
-        <meta name="tags" content="240" />
+        <meta name="tags" content="Wonderware" />
+        <meta name="wp-id" content="240" />
         <meta name="date" content="2018-05-14 10:16:58" />
         <meta name="category" content="programming" />
         <meta name="authors" content="DJ" />
-        <meta name="summary" content="" />
+        <meta name="summary" content="It's possible to use Wonderware for PLC I/O and custom C# applications on the side, if you're willing to use RabbitMQ to communicate between them." />
     </head>
     <body>
     Wonderware makes excellent HMIs (computer displays in an industrial environment), but what if you have a large legacy C# application that you want to use with Wonderware without paying for more licenses? I ran into this situation recently, and I came up with the following solution: create an "adapter" program that provides <a href="https://www.rabbitmq.com/">RabbitMQ</a> functionality inside the Wonderware galaxy.
