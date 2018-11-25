@@ -21,12 +21,12 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-MENUITEMS = ( ('Presentations', 'presentations-list.html'), 
+MENUITEMS = ( ('Presentations', '/presentations-list.html'), 
 	      ('Publications (old)', '/science'),)
 
 # Blogroll
 LINKS = (('Publications (until 2013)', '/science'),
-         ('Presentation List (since 2013)', 'presentations-list.html'),)
+         ('Presentation List (since 2013)', '/presentations-list.html'),)
 
 GOOGLE_ANALYTICS = 'UA-40728104-1'
 
