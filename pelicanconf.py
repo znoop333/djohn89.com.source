@@ -28,7 +28,7 @@ MENUITEMS = ( ('Presentations', '/presentations-list.html'),
 LINKS = (('Publications (until 2013)', '/science'),
          ('Presentation List (since 2013)', '/presentations-list.html'),)
 
-GOOGLE_ANALYTICS = 'UA-40728104-1'
+GOOGLE_ANALYTICS = 'G-WJG22RSKKD'
 
 DEFAULT_PAGINATION = 20
 
